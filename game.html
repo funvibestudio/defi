@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Défis du Jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Défis du Jeu 🎮</h1>
+    </header>
+
+    <section class="game">
+        <!-- Formulaire pour entrer les noms des joueurs -->
+        <div id="player-entry">
+            <h2>Entrez les noms des joueurs :</h2>
+            <input type="text" id="player-name" placeholder="Nom du joueur">
+            <button id="add-player-btn">Ajouter un joueur</button>
+            <button id="start-game-btn" style="display: none;">Commencer le jeu</button>
+        </div>
+
+        <!-- Liste des joueurs -->
+        <ul id="players-list"></ul>
+
+        <!-- Zone des défis -->
+        <h3 id="current-challenge">Clique sur "C'est parti !" pour voir le défi.</h3>
+        <button id="next-challenge" style="display: none;">C'est parti !</button>
+
+        <!-- Liste des résultats -->
+        <div id="player-buttons"></div>
+
+        <!-- Tableau des scores à la fin -->
+        <div id="score-board" style="display: none;">
+            <h2>Tableau des Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom du Joueur</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="scores"></tbody>
+            </table>
+            <button id="restart-btn">Recommencer</button>
+        </div>
+    </section>
+
+    <script src="game.js"></script>
+</body>
+</html>
