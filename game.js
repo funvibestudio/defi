@@ -5,10 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Liste des défis à réaliser
     const challenges = [
-        "Prendre une photo avec un chat 🐱",
         "Faire une pyramide humaine ⛰️",
         "Danser sur un morceau de musique 🎶",
         "Trouver un objet rouge 🔴",
+        "Mets toi en calecon",
+        "Aligner 10 objets de la même taille et les prendre en photo.",
+        "Poser avec la position la plus épique que tu puisses imaginer.",
+        "Construire une tour avec des objets trouvés autour de toi.",
+        "Mimer une scène de film culte et prendre une photo.",
+        "Repérer quelque chose avec le chiffre 7 dessus.",
+        "Capturer ton reflet dans un objet qui n'est pas un miroir.",
+        "Faire une roue (ou une tentative rigolote).",
+        "Tenir la pose planche pendant 15 secondes et prendre une photo.",
+        
+        
     ];
 
     const playerNameInput = document.getElementById('player-name');
