@@ -44,22 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Créer une mini exposition d'objets bizarres 👀",
         "Trouver un objet avec une texture douce 🤲",
         "Imiter un cri d'animal 🦓",
-        "Regarder un film sans son et inventer l’histoire 🎥",
-        "Réciter une poésie de manière théâtrale 🎭",
-        "Chanter une chanson à l'envers 🎶",
-        "Créer une danse inspirée d’un animal 🦁",
-        "Faire un dessin avec la main non-dominante ✍️",
-        "Réaliser une pyramide d’objets 🏠",
-        "Lancer un frisbee et le rattraper dans une position originale 🥏",
-        "Trouver un objet de la même couleur que tes vêtements 🎨",
-        "Prendre un selfie en portant un chapeau bizarre 🎩",
-        "Mettre des chaussettes de couleurs différentes 🧦",
-        "Créer une œuvre d'art avec des fruits 🍊",
-        "Réaliser un dessin sur un miroir avec du rouge à lèvres 💄",
-        "Construire une maison en bois miniaturisée 🏠",
-        "Faire un défilé de mode avec des vêtements imprévus 👗",
-        "Changer de coiffure et prendre une photo 📸",
-        "Faire une ronde avec tes amis 👯",
         "Regarder un livre à l’envers 📚",
         "Essayer de faire 5 saltos en arrière 🌀",
         "Prendre une photo dans une pose de super-héros 🦸",
@@ -92,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Chanter un air d'opéra de manière exagérée 🎤",
         "Faire un dessin avec les pieds 🦶",
         "Mettre des vêtements à l’envers pendant 10 minutes ⏱️",
-        "Créer un poème avec des mots aléatoires 📖",
+        "Créer une poésie avec des mots aléatoires 📖",
         "Faire une danse avec un balai à la place d’un partenaire 🧹",
         "Dessiner un paysage avec des crayons de couleur 🏞️",
         "Jouer à faire des ombres chinoises avec tes mains 🖤",
@@ -119,7 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
         "Réaliser une performance artistique en utilisant des ombres 👤",
     ];
 
-    // Limiter les défis à 10
+    // Mélanger le tableau des défis de manière aléatoire
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // Échanger les éléments
+        }
+    }
+
+    // Mélanger les défis et en prendre 10 au maximum
+    shuffleArray(challenges);
     const limitedChallenges = challenges.slice(0, 10);
 
     const playerNameInput = document.getElementById('player-name');
